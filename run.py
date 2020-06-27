@@ -20,7 +20,7 @@ f = open("anyids.txt", "r")
 anyids = f.read()
 anyids = anyids.split("\n")
 threads = []
-worker = BoundedProcessPoolExecutor(max_workers=2)
+worker = BoundedProcessPoolExecutor(max_workers=7)
 j = 1000
 i = 0
 while True:
