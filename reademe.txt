@@ -1,0 +1,6 @@
+git clone https://github.com/jaydeep1305/test_domain.git
+cd test_domain/
+docker build -t yahoo
+sudo docker build -t greatjoin/yahoo:01
+docker build -t yahoo .
+docker run yahoo
