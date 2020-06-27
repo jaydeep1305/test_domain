@@ -1,0 +1,14 @@
+1593175850885	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2HIQ2Z"
+1593175859619	Marionette	INFO	Listening on port 40535
+1593175859719	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593175869385	Marionette	INFO	Stopped listening on port 40535
+1593175938930	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSrXj2y"
+1593175944461	Marionette	INFO	Listening on port 45079
+1593175944554	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593175960319	Marionette	INFO	Stopped listening on port 45079
+1593175960659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenzTmbA"
+JavaScript error: resource:///modules/UrlbarInput.jsm, line 2049: TypeError: event.target.closest is not a function
+1593175966649	Marionette	INFO	Listening on port 39181
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 203: NS_ERROR_FAILURE: Should pass a non-null uri
+1593175966682	Marionette	WARN	TLS certificate errors will be ignored for this session
+1593175985572	Marionette	INFO	Stopped listening on port 39181
